@@ -13,16 +13,20 @@
     overflow-x: hidden;
 }
 
-body {
-    margin-bottom: 10px;
-}
-
 header {
     width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2.188rem;
+}
+
+button {
+    width: 9.375rem;
+    height: 2.5rem;
+    border: 0;
+    border-radius: 25px;
+    color: var(--white-primary);
 }
 
 .link-container {
@@ -36,9 +40,15 @@ header {
     cursor: pointer;
 }
 
-.link-container > a:hover {
-    transition: 0.2s;
-    transform: translateY(10px);
+.socials-container {
+    display: flex;
+    max-width: 60px;
+    gap: 20px;
+}
+
+.socials-container > img {
+    width: 24px;
+    height: 24px;
 }
 
 .main {
@@ -69,14 +79,6 @@ header {
     left: 40px;
     bottom: 40px;
     gap: 1rem;
-}
-
-.btn-container > button {
-    width: 9.375rem;
-    height: 2.5rem;
-    border: 0;
-    border-radius: 25px;
-    color: var(--white-primary);
 }
 
 .btn-container > button:first-child {
@@ -116,7 +118,8 @@ header {
     margin-top: 30px;
 }
 
-.how-container > p {
+.title {
+    text-align: center;
     font-size: 2rem;
     text-transform: uppercase;
 }
@@ -156,4 +159,37 @@ header {
     justify-content: center;
     align-items: center;
     gap: 24px;
+}
+
+.top-seller {
+    margin-top: 30px;
+}
+
+.img-container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.img-container > img {
+    border-radius: 10px;
+}
+
+.text-btn-container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 200px 0 200px;
+}
+
+.text-btn-container > p {
+    max-width: 400px;
+}
+
+.text-btn-container > button {
+    background-color: var(--orange-primary);
 }
