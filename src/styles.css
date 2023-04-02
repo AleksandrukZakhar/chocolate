@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 
+:root {
+    --white-primary: hsl(0, 0%, 100%);
+    --orange-primary: hsl(31, 98%, 56%);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -29,4 +34,70 @@ header {
 .link-container > a:hover {
     transition: 0.2s;
     transform: translateY(10px);
+}
+
+.main {
+    margin: 0 auto;
+    position: relative;
+    max-width: 1136px;
+    height: 600px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    background-image: url("./images/chocolate-main.jpg");
+    border: 0;
+    border-radius: 25px;
+    margin-top: 30px;
+}
+
+.main > p {
+    max-width: 450px;
+    position: absolute;
+    font-size: 2rem;
+    left: 40px;
+    bottom: 117px;
+    color: var(--white-primary);
+}
+
+.btn-container {
+    display: flex;
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    gap: 1rem;
+}
+
+.btn-container > button {
+    width: 150px;
+    height: 40px;
+    border: 0;
+    border-radius: 25px;
+    color: var(--white-primary);
+}
+
+.btn-container > button:first-child {
+    background-color: var(--orange-primary);
+}
+
+.btn-container > button:nth-child(2) {
+    border: solid 1px var(--white-primary);
+    background-color: transparent;
+}
+
+.scroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    color: var(--white-primary);
+    gap: 0.7rem;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 50%;
+    background-color: var(--white-primary);
 }
