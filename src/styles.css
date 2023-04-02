@@ -10,6 +10,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Noto Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    margin-bottom: 10px;
 }
 
 header {
@@ -39,8 +44,8 @@ header {
 .main {
     margin: 0 auto;
     position: relative;
-    max-width: 1136px;
-    height: 600px;
+    max-width: 71rem;
+    height: 37.5rem;
     object-fit: cover;
     object-position: 50% 50%;
     background-image: url("./images/chocolate-main.jpg");
@@ -50,7 +55,7 @@ header {
 }
 
 .main > p {
-    max-width: 450px;
+    max-width: 28.125rem;
     position: absolute;
     font-size: 2rem;
     left: 40px;
@@ -67,8 +72,8 @@ header {
 }
 
 .btn-container > button {
-    width: 150px;
-    height: 40px;
+    width: 9.375rem;
+    height: 2.5rem;
     border: 0;
     border-radius: 25px;
     color: var(--white-primary);
@@ -95,9 +100,60 @@ header {
 }
 
 .icon {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     border: 0;
     border-radius: 50%;
     background-color: var(--white-primary);
+}
+
+.how-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.how-container > p {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.orange {
+    color: var(--orange-primary);
+}
+
+.how-wrapper {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.how-wrapper > img {
+    width: 600px;
+    height: 400px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.how-text {
+    max-width: 400px;
+}
+
+.how-text > p {
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.how-text > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 }
